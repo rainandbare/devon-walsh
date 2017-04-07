@@ -1,0 +1,71 @@
+div.main.full-page {
+	h2.faq-main-title{
+	position: relative;
+	margin: 0;
+	text-align: center;
+	}
+	h2.faq-main-title:before, h2.faq-main-title:after{
+		content: "";
+		display: block;
+		width: 200px;
+		height: 1px;
+		background: $grey;
+		position: absolute;
+	}
+	h2.faq-main-title:before{
+		left: 65%;
+		top: 56%;
+	}
+	h2.faq-main-title:after{
+		right: 65%;
+		top: 56%;
+	}
+	.tabs {
+		  position: relative;   
+		  min-height: 800px;
+		  clear: both;
+		  margin: 25px 0;
+		      display: flex;
+		    flex-flow: row nowrap;
+		    justify-content: center;
+		}
+	.tab {
+	  float: left;
+	  margin-top: 25px;
+	}
+	
+	.tab label {
+	  color: $grey; 
+	  padding: 10px 30px; 
+	  border-left: 1px solid #ccc; 
+	  margin-left: -1px; 
+	  position: relative;
+	  left: 1px; 
+	}
+	.tab label[for=tab-1] {
+		border-left: none;
+	}
+	
+	.tab [type=radio] {
+	  display: none;   
+	}
+	.content-faq {
+	  position: absolute;
+	  top: 54px;
+	  left: 0;
+	  background: white;
+	  right: 0;
+	  bottom: 0;
+	  padding: 50px;
+	}
+	[type=radio]:checked ~ label {
+	  color: $purple;
+	  z-index: 2;
+	}
+	[type=radio]:checked ~ label ~ .content-faq {
+	  z-index: 1;
+	}
+	h4{
+		text-transform: inherit;
+	}
+}

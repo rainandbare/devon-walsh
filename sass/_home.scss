@@ -1,0 +1,263 @@
+main {
+	header.header-home{
+		height: 500px;
+		background-position: 100% 0;
+		width: 100%;
+		display: flex;
+		flex-flow: row no wrap;
+		justify-content: flex-end;
+		h2 {
+			width: 60%;
+			text-align: center;
+		}
+	}
+}
+
+section.summary{
+	div.fruitsOTS{
+		position: relative;
+		img{
+			position: absolute;
+    		width: 90px;
+			top: 20px;
+    		left: calc(50% - 380px);
+		}
+	}
+}
+
+ul.summary{
+	li{
+		background-color: $purple;
+		padding: 0;
+		margin-left: 20px;
+		width: calc(33.3% - 20px);
+		div{
+			padding: 20px 60px;
+		}
+	}
+	li:nth-of-type{
+		margin-left: 0px;
+	}
+	img{
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+	h4, p{
+		color: white;
+		text-align: center;
+	}
+}
+
+section.process {
+	img.fruit1{
+		position: absolute;
+	}
+	h3{
+		position: relative;
+		margin: 0;
+	}
+	h3:before, h3:after{
+		content: "";
+		display: block;
+		width: 200px;
+		height: 1px;
+		background: $grey;
+		position: absolute;
+	}
+	h3:before{
+		left: 65%;
+		top: 56%;
+	}
+	h3:after{
+		right: 65%;
+		top: 56%;
+	}
+	h4, p{
+		padding: 0;
+		margin: 0;
+		color: $grey;
+	}
+	h4{
+		padding-top: 15px;
+	}
+	li{
+		max-width: 600px;
+		width: 80%;
+		margin: 0 auto; 
+		padding: 30px 0px 0px; 
+	}
+	li:first-of-type{
+		padding: 0px 0px 0px; 
+	}
+	div.icon, div.description{
+		float: left;
+	}
+	div.icon{
+		width: calc(20% - 40px);
+    	padding: 15px;
+    	margin-right: 40px;
+		background: $teal;
+		border-radius: 50%;
+		float: left;
+		position: relative;
+		svg {
+			fill: #F5F5F5;
+		}
+	}
+	div.icon:after{
+		content: "";
+		display: block;
+		width: 1px;
+		height: 100px;
+		background: $grey;
+		position: absolute;
+		z-index: -1;
+		left: 50%;
+	}
+	div.icon.last:after{
+		width: 0;
+		height: 0;
+	}
+	div.description{
+		width: 80%;
+		float: left;
+	}
+ }
+
+section.delivery{
+ 	background-color: $lightgrey;
+ 	margin-top: 80px;
+ 	.delivery-content{
+ 		text-align: center;
+ 	}
+ 	h3{
+ 		padding: 30px 0 0;
+ 		margin: 0;
+ 	}
+ 	h6{
+		font-size: 12px;
+		padding: 0px 30px 10px;
+		margin: 0;
+		span{
+			display: block;
+    		padding-top: 20px;
+    		color:$teal;
+    		font-size: 20px;
+    		font-family: $serif;
+		}
+ 	}
+ 	p{
+ 		font-size: 16px;
+ 		padding: 0px 30px;
+ 	}
+ 	img{
+ 		display: block;
+ 	}
+ 	button{
+ 		background-color: $pink;
+ 	}
+ }
+
+section.order{
+ 	margin-bottom: 120px;
+ 	div.container{
+ 		position: relative;
+ 	}
+ 	.orderOption{
+ 		border: 8px solid $teal;
+ 		padding: 20px;
+ 		text-align: center;
+ 		width: 50%;
+ 		margin: 0 auto;
+ 	}
+ 	h3{
+		text-transform: capitalize;
+	}
+ 	p{
+ 		padding: 20px 0px;
+ 	}
+ 	img{
+ 		position: absolute;
+ 		right: 15%;
+    	bottom: -15%;
+ 	}
+}
+
+section.testimonials{
+	background-color: $purple;
+	padding: 120px 0px;
+	div.container{
+		max-width: 1000px;
+		columns: 2;
+		column-gap: 40px;
+	}
+	h3{
+		color: white;
+		font-size: 40px;
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0 0 0 20px;
+		text-align: left;
+	}
+	div.testimonial{
+		background-color: white;
+		border: 8px solid $teal;
+		padding: 30px;
+		margin: 20px 0px 30px;
+		-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+		
+	}
+	p{
+		font-size: 14px;
+	}
+	div.signOff{
+		padding: 10px 30px;
+	}
+	p.name, p.subtitle{
+		font-family: $serif;
+		font-size: 18px;
+		line-height: 1.1;
+		font-weight: bold;
+		text-align: right;
+		padding: 0;
+		margin: 0;
+	}
+	p.subtitle{
+		color: $teal;
+	}
+}
+section.bio{
+	div.container{
+		padding: 120px 120px 40px;
+	}
+	div.bio-content{
+		padding: 0px 20px;
+	}
+	h3{
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		span{
+			color: $teal;
+		}
+	}
+	img{
+		border: 8px solid $teal;
+	}
+	button{
+		    width: 90%;
+		    margin-top: 37px;
+		    padding: 20px;
+		    font-size: 20px;
+		    background-color: #f2848A;
+		a{
+			font-family: $serif;
+		}
+		
+	}
+}
+
+

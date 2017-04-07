@@ -1,0 +1,45 @@
+ul.menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	li {
+		margin-right: 10px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		padding: 10px;
+
+		a {
+			color: $purple;
+			text-align: center;
+			display: inline-block;
+			padding: 10px;
+			font-size: 20px;
+		}
+		a:after{
+			content: '';
+			display: block;
+			margin-top: 4px;
+			height: 2px;
+			width: 0;
+			background: transparent;
+			transition: width .5s ease, background-color .5s ease;
+		}
+		a:hover:after {
+			width: 100%;
+			background: $purple;
+		}
+	}
+	li#menu-item-1072 a{
+		background: #3c305E;
+	    color: white;
+	    padding: 16px 45px 0px;
+	    margin-top: -7px;
+	    border-radius: 8px;
+	    font-family: $serif;
+	}
+}
+	
+
+

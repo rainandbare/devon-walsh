@@ -1,0 +1,20 @@
+header {
+	padding: 20px 0px; 
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-logo {
+	width: 20%;
+	img {
+		width: 100%;
+	}
+}
+.header-nav {
+	width: 80%;
+	ul{
+		text-align: right;
+	}
+}

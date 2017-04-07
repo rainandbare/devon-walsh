@@ -1,0 +1,443 @@
+
+h1.order{
+	padding: 0 0 0 15px;
+}
+
+td.label{
+	display: none;
+}
+
+.droppable_cart{
+	margin: 0px 10px 15px;
+	padding: 10px;
+	border: 2px solid $middlegrey;
+	h4, h6{
+		padding: 0 0 0 15px;
+	}
+	h4{
+		margin-bottom: 0px;
+	}	
+	h6{
+		margin: 0 0 10px 0;
+	}
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    width: 33%;
+    text-align: center;
+    position: relative;
+    span.title{
+    	text-align: center;
+    	font-family: $serif;
+    	display: block;
+    	font-size: 24px;
+    	color: $purple;
+
+    }
+	p.ingredients{
+		font-size: 16px;
+		margin: 2px 25px;
+		padding: 10px;
+		position: absolute;
+		height: 270px;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: RGBA(245, 245, 245, 0.8);
+		opacity: 0;
+		transition: opacity 0.4s ease;
+		text-align: left;
+		overflow: scroll;
+
+		strong{
+			color: $teal;
+			display: block;
+		}
+	}
+	p.ingredients.show{
+		opacity: 1;
+	}
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product, section.order_selections li{
+	margin: 0 0 30px;
+}
+
+form.cart_sidebar{
+	width: 30%;
+	float: left;
+}
+
+
+td.product-name{
+	p {
+		display: inline;
+	}
+	input {
+		width: 30px;
+	    outline: none;
+	    border: none;
+	    padding: 0;
+	    margin: 0;
+	}
+}
+.woocommerce table.shop_table, .woocommerce table.shop_table td {
+	border: none;
+}
+
+input.button.update_cart{
+	display: none;
+}
+
+label.arrows{
+	cursor: pointer;
+	display: block;
+	float: right;
+	clear: both;
+	div{
+		width: 20px;
+	}
+	svg{
+		fill: $teal;
+		width: 100%;
+	}
+}
+
+table.shop_table.shop_table_responsive.cart {
+	 margin-bottom: 0px;
+}
+
+.woocommerce table.shop_table td.actions {
+	padding: 0;
+}
+
+section.order_selections{
+	width: 70%;
+	float:left;
+	overflow: scroll;
+	height: 600px;
+	li{
+		img{
+			border: 2px solid $middlegrey;
+		}
+	}
+	td {
+		padding: 0;
+	}
+	td.value{
+		display: flex;
+		flex-flow: row nowrap;
+		width: 80%;
+	    margin: 0 auto;
+	    input{
+	    	display: none;
+	    }
+	}
+	td.value > div { 
+		padding: 5px 15px;
+		font-family: $serif;
+		color: $grey;
+		text-transform: uppercase;
+	    	svg{
+	    		transition: all 0.5s ease;
+	    	}
+	}
+	.cow{
+		svg{
+			fill: $purple;
+		}
+	}
+	.chicken{
+		svg{
+			fill: $orange;
+		}
+	}
+	.tofu{
+		svg{
+			fill: $pink;
+		}
+	}
+	.justVeg{
+		svg{
+			fill: $teal;
+		}
+	}
+	.cow.bright{
+		svg{
+			fill: lighten(saturate($purple, 100%), 30%);
+		}
+	}
+	.chicken.bright{
+		svg{
+			fill: darken(saturate($orange, 100%), 20%)
+		}
+	}
+	.tofu.bright{
+		svg{
+			fill: darken(saturate($pink, 100%), 10%);
+		}
+	}
+	.justVeg.bright{
+		svg{
+			fill: darken(saturate($teal, 100%), 5%);
+		}
+	}
+	label div.protein_type.grey {
+		svg{
+	    		fill: #d3ced2;
+	    	}
+	}
+	label.attribute_delivery-day.hover{
+		color: $purple;
+	}
+
+	label.attribute_delivery-day.chosen{
+		color: $teal;
+	}
+	li.product.type-product.directions{
+		height: 275px;
+		background-color: $purple;
+		color: white;
+		padding: 30px;
+		border-left: 15px white solid;
+		border-right: 15px white solid;
+		h3{
+			padding: 0px;
+			font-size: 27px;
+			color: white;
+			margin: 20px 0px;
+			text-transform: lowercase;
+			text-align: left;
+		}
+	}
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+	background-color: $orange;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
+	background-color: $darkorange;
+}
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover{
+	background-color: $lightorange;
+}
+section.order-summary{
+	table.shop_table.shop_table_responsive.cart.complete-order{
+		width: 875px;
+		margin: 0 auto;
+	}
+	h3{
+		margin: 0;
+		padding: 75px 0 10px;
+	}
+	td.product-quantity input {
+		width: 30px;
+	    outline: 0;
+	    padding: 0;
+	    display: block;
+	}
+	tr.cart_item:nth-of-type(2n+1){
+		background-color: $lightgrey;
+	}
+	td.product-refresh{
+		background-color: white;
+		label{
+			visibility: hidden;
+			opacity: 0;
+			transition: opacity 0.2s ease;
+		}
+		label.show{
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	td.product-delivery-day.sunday{
+		background: $orange;
+		
+		
+	}
+	td.product-delivery-day.wednesday{
+		background: $pink;
+	}
+	td.product-delivery-day{
+		position: relative;
+	}
+	td.product-delivery-day div.rotate{
+		color: white;
+		position: absolute;
+		transform: rotate(270deg);
+	}
+	td.product-delivery-day.sunday div.rotate{
+		left: -13px;
+	}
+	td.product-delivery-day.wednesday div.rotate{
+		left: -27px;
+	}
+}
+div.cart-collaterals{
+	margin: 40px 0px 0px;
+}
+tr.cart-coupon{
+	th{
+		width: 215px;
+		padding: 9px 2px !important
+	}
+	input{
+	    outline: none;
+	    border: none;
+	    background: $lightgrey;
+	    padding: 10px;;
+	}
+}
+p#billing_postcode_field{
+	float: none;
+}
+p#billing_country_field{
+	display: none;
+}
+div.account-navigation{
+	text-align: right;
+    padding-right: 10px;
+}
+a.buttonA, a.buttonB{
+	background-color: $teal;
+	border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-family: $serif;
+}
+a.buttonB{
+	background-color: $pink;
+	margin-left: 10px; 
+}
+.woocommerce form .form-row .required{
+	color: $pink;
+}
+div#customer_details, div#customer_login, form.login{
+	input, textarea{
+		background-color: $lightgrey;
+		border: none;
+		outline: none;
+		padding: 10px;
+	}
+}
+.woocommerce-checkout form.login{
+	p:first-of-type{
+		display: none;
+	}
+	p.lost_password a {
+	    position: relative;
+	    top: -52px
+	}
+	padding-left: 20%; 
+	padding-right: 20%; 
+    margin: 0 auto 40px;
+}
+.woocommerce-checkout #payment{
+	background: $lightgrey;
+	div.payment_box:before{
+		    border: 1em solid $middlegrey;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+	}
+	div.payment_box {
+		background: $middlegrey;
+		p{
+			margin: 0;
+		}
+	}
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+	padding: 10px 25px;
+	border-radius: 8px;
+}
+
+div.create-account > p:first-of-type {
+	display: none;
+}
+p.login_instructions, p.register_instructions  {
+	font-size: 16px;
+	color: $grey
+}
+p.login_instructions{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+p.register_instructions{
+	margin: 0;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+    background-color: $purple;
+    color: $lightgrey;
+    border-top: 3px solid $purple;
+    a.button, button.button, input.button, a {
+		padding: 0px 20px!important;
+	    margin-top: 1px;
+	    font-weight: 300;
+	    font-size: 16px;
+	    margin-bottom: 0;
+	    color: white;
+	    background: none;
+	}
+	a.button:hover, button.button:hover, input.button:hover, a:hover {
+	 	background: none;
+	 	color: $lightpurple;
+	}
+}
+.woocommerce-message {
+    border-top-color: $teal;
+    background-color: $teal;  
+    a.button, button.button, input.button {
+	     display: none;
+	}
+	a:hover {
+	 	color: $lightteal;
+	}
+}
+.woocommerce-message:before, .woocommerce-error:before, .woocommerce-info:before {
+	color: $lightgrey;
+}
+.woocommerce-error {
+     border-top-color: $pink;
+     background-color: $pink;  
+}
+p.disabled-warning{
+	font-size: 14px;
+    color: red;
+    margin: 0;
+}
+p.disabled-warning:first-of-type{
+	padding-top: 15px;
+}
+div.devon_order_subtotals{
+	text-align: right;
+    width: 875px;
+    margin: 0 auto;
+    padding: 0px 90px;
+}
+div#order_review div.woocommerce-info {
+	display: none;
+}
+div.checkout-coupon-code{
+	margin: 10px 0;
+	input {
+		border: 0;
+		padding: 10px;
+		background: $lightgrey;
+	}
+}
+td[data-title="Delivery Fee"]{
+	color: white;
+	span.woocommerce-Price-amount.amount {
+		color: #333;
+	    position: relative;
+	    left: -35px;
+	}
+}
+.woocommerce form .form-row {
+    margin: 0 0 15px;
+}
+    

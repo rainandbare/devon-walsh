@@ -1,0 +1,113 @@
+div.main.full-page h3{
+	text-align: left;
+	padding: 10px 0px;
+	margin: 0;
+}
+div#customer_login{
+	
+	h3{
+		color: $teal;
+		text-align: center;
+		font-size: 26px;
+		padding: 0;
+		margin: 0;
+	}
+	h4{
+		font-size: 30px;
+		font-family: $sans;
+		text-align: center;
+		color: $middlegrey;
+		padding: 20px 0px 0px;
+		margin: 0;
+	}
+	input[type=submit]{
+		    width: 100%;
+		    margin: 20px auto;
+		    display: block;
+		    background: $teal;
+		    color: #fff;
+		    padding: 20px 25px;
+		    border-radius: 8px;
+	}
+	
+}
+.woocommerce form.login, .woocommerce form.register{
+	border: none;
+	background: #D0CDD8;
+}
+.woocommerce-MyAccount-content{
+	fieldset{
+	border: none;
+	background: #D0CDD8;
+	border-radius: 8px;
+	legend{
+		display: none;
+	}
+	}
+}
+p.lost_password a{
+	float: right;
+}
+.woocommerce-MyAccount-content, .woocommerce form.login, .woocommerce form.register, form.lost_reset_password{
+	input[type=submit]{
+		    width: 100%;
+		    margin: 20px auto;
+		    display: block;
+		    background: $teal;
+		    color: #fff;
+		    padding: 20px 25px;
+		    border-radius: 8px;
+	}
+	input, textarea{
+		background-color: $lightgrey;
+		border: none;
+		outline: none;
+		padding: 10px;
+	}
+	label{
+		font-family: $serif;
+	}
+}
+.woocommerce-MyAccount-navigation{
+	p{
+		font-family: $serif;
+		margin: 0;
+		strong{
+			color: $teal;
+		}
+	}
+	p.nav_user{
+		padding-top: 20px;
+		font-size: 22px;
+	}
+	p.nav_user_signout{
+		padding-bottom: 20px;
+		font-size: 14px;
+	}
+}
+header.woocommerce-Address-title.title{
+	float: right;
+	width: 30%;
+	h3{
+		display: none;
+	}
+	a{
+		padding: 10px 25px;
+		background: $teal;
+		border-radius: 8px;
+		color: white;
+	}
+}
+form.lost_reset_password {
+	width: 50%;
+	margin: 40px auto;
+	p.form-row-first{
+		float: none;
+		width: 100%;
+	}
+	p:first-of-type{
+		font-size: 16px; 
+		color: $grey;
+		text-align: center;
+	}
+}
